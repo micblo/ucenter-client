@@ -1,0 +1,36 @@
+{
+  "name": "ucenter-client",
+  "version": "1.0.0",
+  "description": "A full-featured UCenter client for Node.js.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micblo/ucenter-client.git"
+  },
+  "bugs": {
+    "url": "http://github.com/micblo/ucenter-client/issues"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "scripts": {
+    "test": "mocha --recursive",
+    "test-user": "mocha ./test/user.js",
+    "test-pm": "mocha ./test/pm.js"
+  },
+  "keywords": [
+    "ucenter",
+    "discuz",
+    "node"
+  ],
+  "author": "Payne",
+  "license": "MIT",
+  "dependencies": {
+    "iconv-lite": "^0.4.23",
+    "request": "^2.86.0",
+    "xml-js": "^1.6.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  }
+}

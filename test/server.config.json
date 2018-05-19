@@ -1,0 +1,7 @@
+{
+    "UC_KEY": "12345678aa",
+    "UC_API": "http://localhost/uc",
+    "UC_CHARSET": "gbk",
+    "UC_APPID": 1,
+    "UC_IP": "127.0.0.1"
+}
