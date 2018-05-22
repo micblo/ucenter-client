@@ -1,5 +1,7 @@
 # ucenter-client - Easy to connect UC
 
+[![NPM](https://nodei.co/npm/ucenter-client.png)](https://nodei.co/npm/ucenter-client/)
+
 [![dependencies Status](https://david-dm.org/micblo/ucenter-client/status.svg)](https://david-dm.org/micblo/ucenter-client)
 [![Known Vulnerabilities](https://snyk.io/test/github/micblo/ucenter-client:package.json/badge.svg?targetFile=package.json)](https://snyk.io/test/github/micblo/ucenter-client:package.json?targetFile=package.json)
 
@@ -91,14 +93,31 @@ async index() {
 
 More document of API, you can see "UCenter 接口开发手册 - API 接口".
 
-### User
+### Interfaces
 
-You can use `uc.user` to call User functions.
+- `uc.user`: User (用户接口)
+- `uc.pm`: Private Message (私信接口)
+- `uc.friend`: Friend (好友接口)
+- `uc.credit`: Credit (积分接口)
+- `uc.avatar`: Avatar (头像接口) [Unsupport upload]
+- `uc.feed`: Feed (订阅接口)
+- `uc.tag`: Tag (标签接口)
+- `uc.app`: App (应用接口)
+- `uc.mail`: Mail (邮件接口)
 
-Document: "UCenter 接口开发手册 - 接口函数 - 用户接口".
+More document of interfaces, you can see "UCenter 接口开发手册".
 
-### PM
+### Utility
 
-You can use `uc.pm` to call PrivateMessage functions.
+In order to help developers call util functions, we provide a public utility functions set.
+You can call this functions by `uc.utils.XXX`. Here is list of functions:
 
-Document: "UCenter 接口开发手册 - 接口函数 - 私信接口".
+- `parseQueryString`: `QueryString.parse`, supports ALL charsets
+- `urlEncode`: `encodeURIComponent`, supports ALL charsets
+- `urlDecode`: `decodeURIComponent`, supports ALL charsets
+- `md5`: For simple MD5
+- `randStr`: random ASCII words
+- `serializeXml`: JS Object -> XML
+- `unserializeXml`: XML -> JS Object
+
+We has described all the functions of Utility.
